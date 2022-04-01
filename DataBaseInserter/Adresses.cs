@@ -16,5 +16,11 @@ namespace DataBaseInserter
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            addresTableAdapter1.Insert(CountryTextBox.Text, CityTextBox.Text, StreetTextBox.Text,ProvinceTextBox.Text, ZipCodeTextBox.Text);
+            MessageBox.Show("Succeffully added addres");
+        }
     }
 }

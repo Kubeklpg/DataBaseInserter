@@ -89,6 +89,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Car_Rental_v1_0DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Adresses.resx">
+      <DependentUpon>Adresses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
     </EmbeddedResource>
