@@ -16,5 +16,53 @@ namespace DataBaseInserter
         {
             InitializeComponent();
         }
+
+        private void Employes_Load(object sender, EventArgs e)
+        {
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli '_Car_Rental_v1_0DataSet1.Position' . Możesz go przenieść lub usunąć.
+            this.positionTableAdapter1.Fill(this._Car_Rental_v1_0DataSet1.Position);
+            // TODO: Ten wiersz kodu wczytuje dane do tabeli '_Car_Rental_v1_0DataSet1.Addres' . Możesz go przenieść lub usunąć.
+            this.addresTableAdapter.Fill(this._Car_Rental_v1_0DataSet1.Addres);
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.addresTableAdapter.FillBy(this._Car_Rental_v1_0DataSet1.Addres);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void fillByToolStripButton_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                this.positionTableAdapter1.FillBy(this._Car_Rental_v1_0DataSet1.Position);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int idPos = (int)positionTableAdapter1.IdFromName(comboBox2.Text);
+            int idAdr = (int)addresTableAdapter.IdByCity(comboBox1.Text);
+            employeTableAdapter1.Insert(idPos, LoginTextBox.Text, PasswordTextBox.Text, NameTextBox.Text, SurnameTextBox.Text, PhoneNumberTextBox.Text, idAdr);
+            MessageBox.Show("Inserted an Employe");
+        }
     }
 }
