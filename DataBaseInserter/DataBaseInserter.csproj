@@ -84,6 +84,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Car_Rental_v1_0DataSet.cs">
+      <DependentUpon>_Car_Rental_v1_0DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_Car_Rental_v1_0DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employes.resx">
       <DependentUpon>Employes.cs</DependentUpon>
