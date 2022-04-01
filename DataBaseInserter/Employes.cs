@@ -15,6 +15,7 @@ namespace DataBaseInserter
         public Employes()
         {
             InitializeComponent();
+            
         }
 
         private void Employes_Load(object sender, EventArgs e)

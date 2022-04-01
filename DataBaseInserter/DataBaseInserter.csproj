@@ -70,6 +70,12 @@
     <Compile Include="Employes.Designer.cs">
       <DependentUpon>Employes.cs</DependentUpon>
     </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShotTerm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShotTerm.Designer.cs">
+      <DependentUpon>ShotTerm.cs</DependentUpon>
+    </Compile>
     <Compile Include="_Car_Rental_v1_0DataSet.cs">
       <DependentUpon>_Car_Rental_v1_0DataSet.xsd</DependentUpon>
     </Compile>
@@ -119,6 +131,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShotTerm.resx">
+      <DependentUpon>ShotTerm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

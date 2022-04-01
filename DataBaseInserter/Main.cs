@@ -14,6 +14,7 @@ namespace DataBaseInserter
     {
         public Main()
         {
+
             InitializeComponent();
         }
 
@@ -45,6 +46,18 @@ namespace DataBaseInserter
         {
             Position position = new Position();
             position.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ShotTerm shortTerm = new ShotTerm();
+            shortTerm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            History history = new History();   
+            history.Show();
         }
     }
 }
