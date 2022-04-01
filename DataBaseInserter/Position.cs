@@ -16,5 +16,12 @@ namespace DataBaseInserter
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double wage = Convert.ToDouble(WageTextBox.Text);
+            positionTableAdapter1.Insert(NameTextBox.Text,wage);
+            MessageBox.Show("Postion added");
+        }
     }
 }
