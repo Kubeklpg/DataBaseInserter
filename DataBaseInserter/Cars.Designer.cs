@@ -46,12 +46,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.ColorTextBox = new System.Windows.Forms.TextBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this._Car_Rental_v1_0DataSet = new DataBaseInserter._Car_Rental_v1_0DataSet();
+            this.button1 = new System.Windows.Forms.Button();
             this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.carTableAdapter = new DataBaseInserter._Car_Rental_v1_0DataSetTableAdapters.CarTableAdapter();
             this.tableAdapterManager = new DataBaseInserter._Car_Rental_v1_0DataSetTableAdapters.TableAdapterManager();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.carTableAdapter = new DataBaseInserter._Car_Rental_v1_0DataSetTableAdapters.CarTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._Car_Rental_v1_0DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
@@ -200,6 +200,11 @@
             this.bindingSource1.DataSource = this._Car_Rental_v1_0DataSet;
             this.bindingSource1.Position = 0;
             // 
+            // _Car_Rental_v1_0DataSet
+            // 
+            this._Car_Rental_v1_0DataSet.DataSetName = "_Car_Rental_v1_0DataSet";
+            this._Car_Rental_v1_0DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(136, 217);
@@ -210,31 +215,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // _Car_Rental_v1_0DataSet
-            // 
-            this._Car_Rental_v1_0DataSet.DataSetName = "_Car_Rental_v1_0DataSet";
-            this._Car_Rental_v1_0DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // carBindingSource
             // 
             this.carBindingSource.DataMember = "Car";
             this.carBindingSource.DataSource = this._Car_Rental_v1_0DataSet;
             // 
-            // carTableAdapter
-            // 
-            this.carTableAdapter.ClearBeforeFill = true;
-            // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.AddresTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CarTableAdapter = this.carTableAdapter;
             this.tableAdapterManager.EmployeTableAdapter = null;
             this.tableAdapterManager.HistoryTableAdapter = null;
             this.tableAdapterManager.PositionTableAdapter = null;
             this.tableAdapterManager.ShortTermTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = DataBaseInserter._Car_Rental_v1_0DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
+            // 
+            // carTableAdapter
+            // 
+            this.carTableAdapter.ClearBeforeFill = true;
             // 
             // Cars
             // 
@@ -291,9 +290,9 @@
         private System.Windows.Forms.Button button1;
         private _Car_Rental_v1_0DataSet _Car_Rental_v1_0DataSet;
         private System.Windows.Forms.BindingSource carBindingSource;
-        private _Car_Rental_v1_0DataSetTableAdapters.CarTableAdapter carTableAdapter;
         private _Car_Rental_v1_0DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         public System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.BindingSource bindingSource2;
+        private _Car_Rental_v1_0DataSetTableAdapters.CarTableAdapter carTableAdapter;
     }
 }

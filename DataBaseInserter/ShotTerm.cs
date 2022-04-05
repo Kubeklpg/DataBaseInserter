@@ -56,7 +56,8 @@ namespace DataBaseInserter
                 payed = 1;
             }
             shortTermTableAdapter1.Insert(idEmmplo, idCust, idCar,Convert.ToDateTime(date), price, payed);
-
+            carTableAdapter1.UpdateQuery(idCar);
+            MessageBox.Show("Created row");
         }
     }
 }
